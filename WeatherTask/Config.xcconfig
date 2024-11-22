@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  WeatherTask
+//
+//  Created by Sherif on 22/11/2024.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+WEATHER_APP_KEY = 7dd15d298f1019590842b48b9eb04b9a
