@@ -35,8 +35,6 @@
 		E04CCFEA2CEEA14900EE816F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CCFE92CEEA14900EE816F /* SceneDelegate.swift */; };
 		E04CCFEC2CEEA32A00EE816F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CCFEB2CEEA32A00EE816F /* AppDelegate.swift */; };
 		E04CCFF22CEEB47900EE816F /* CityEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CCFF12CEEB47900EE816F /* CityEntity.swift */; };
-		E04CCFFA2CEEB6BA00EE816F /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CCFF92CEEB6BA00EE816F /* NetworkProtocol.swift */; };
-		E04CD0002CEEBBAB00EE816F /* MView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CCFFF2CEEBBAB00EE816F /* MView.swift */; };
 		E04CD0022CEEBBF500EE816F /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CD0012CEEBBF500EE816F /* ErrorView.swift */; };
 		E04CD0062CEEBD4800EE816F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CD0052CEEBD4800EE816F /* LocationManager.swift */; };
 		E04CD00A2CEEC1D700EE816F /* URLNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CD0092CEEC1D700EE816F /* URLNetwork.swift */; };
@@ -100,8 +98,6 @@
 		E04CCFEB2CEEA32A00EE816F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E04CCFED2CEEA43400EE816F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E04CCFF12CEEB47900EE816F /* CityEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityEntity.swift; sourceTree = "<group>"; };
-		E04CCFF92CEEB6BA00EE816F /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
-		E04CCFFF2CEEBBAB00EE816F /* MView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MView.swift; sourceTree = "<group>"; };
 		E04CD0012CEEBBF500EE816F /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		E04CD0052CEEBD4800EE816F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		E04CD0092CEEC1D700EE816F /* URLNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLNetwork.swift; sourceTree = "<group>"; };
@@ -289,7 +285,6 @@
 				E02A9C092CF2119700232A4A /* SearchScreen */,
 				E0AB2BE62CF0D998000E4BE7 /* GenericViews */,
 				E0470FD12CF0507400B37A8E /* HomeScreen */,
-				E04CCFFF2CEEBBAB00EE816F /* MView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -306,7 +301,6 @@
 		E04CCFF82CEEB6A500EE816F /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				E04CCFF92CEEB6BA00EE816F /* NetworkProtocol.swift */,
 				E04CD0092CEEC1D700EE816F /* URLNetwork.swift */,
 				E0470FCD2CF02E0000B37A8E /* Endpoints.swift */,
 				E02A9C132CF24C1E00232A4A /* WeatherRepo.swift */,
@@ -473,7 +467,6 @@
 				E0470FC92CF02AC700B37A8E /* WindEntity.swift in Sources */,
 				E02A9C0E2CF23A3500232A4A /* SearchLocationViewModel.swift in Sources */,
 				E04CCFC02CEE9EEE00EE816F /* WeatherTaskApp.swift in Sources */,
-				E04CCFFA2CEEB6BA00EE816F /* NetworkProtocol.swift in Sources */,
 				E0A76B342CF0B0CE00195BCA /* ForecastView.swift in Sources */,
 				E0A76B302CF0A0E500195BCA /* LoadingView.swift in Sources */,
 				E0470FCE2CF02E0000B37A8E /* Endpoints.swift in Sources */,
@@ -488,7 +481,6 @@
 				E037CA852CF1D99E004929DC /* Alerts.swift in Sources */,
 				E02A9C122CF24B1300232A4A /* HomeViewModel.swift in Sources */,
 				E0A76B362CF0B14900195BCA /* DayForecastView.swift in Sources */,
-				E04CD0002CEEBBAB00EE816F /* MView.swift in Sources */,
 				E0470FD32CF0508D00B37A8E /* BackgroundView.swift in Sources */,
 				E0470FC52CF02A4E00B37A8E /* CoordinatesEntity.swift in Sources */,
 				E02A9C142CF24C1E00232A4A /* WeatherRepo.swift in Sources */,

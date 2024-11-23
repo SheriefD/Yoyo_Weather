@@ -17,18 +17,9 @@ struct GetLocationButtonView : View {
     
     var body: some View {
         Button("Get current location") {
-            if showPermissionAlert == true {
-                GlobalAlertManager.shared.triggerAlert(title: "OPSSY", message: "ERROR VIEWWW")
-            } else {
                 action()
                 locationManager.checkLocationAuthorization()
-                
-            }
-        }.padding(.top,50).onAppear {
-            if locationManager.showPermissionDeniedAlert {
-                GlobalAlertManager.shared.triggerAlert(title: "OPSSY", message: "ERROR VIEWWW")
-//                showPermissionAlert = true
-            }
+        }.padding(.top,50)
         }
     }
-}
+

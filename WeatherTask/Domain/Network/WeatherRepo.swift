@@ -7,7 +7,8 @@
 
 import Foundation
 protocol WeatherRepoProtocol{
-    
+    func loadForecastData(lat:CGFloat?,lng: CGFloat?,completion:@escaping (ForecastResponse?) -> ())
+    func loadWeatherData(lat:CGFloat?,lng: CGFloat?,completion:@escaping (CurrentWeatherResponse?) -> ())
 }
 
 class WeatherRepo : ObservableObject,WeatherRepoProtocol{

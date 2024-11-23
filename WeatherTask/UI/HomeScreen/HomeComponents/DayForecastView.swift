@@ -59,20 +59,6 @@ struct DayForecastView: View {
 //                    Rectangle().frame(width: min(progress * geometry.size.width,y.size.width),
 //                                                    height: 10
 //                                                )
-//                    ZStack{
-//                        GeometryReader { geometry in
-//
-//
-//                        }
-//                        Rectangle()
-//                            .frame(
-//                                width: min(progress * geometry.size.width,
-//                                           geometry.size.width),
-//                                height: 10
-//                            )
-//                    }
-                
-                
                 Text("\(high)")
                     .font(.system(size: 22))
                     .foregroundColor(.white)

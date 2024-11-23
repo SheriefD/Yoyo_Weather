@@ -37,7 +37,7 @@ enum ViewState {
     case idle
     case loading
     case success(Any?) // Result for success with generic Success and Failure types
-    case failure(Error)
+    case failure
     static func == (lhs: ViewState, rhs: ViewState) -> Bool {
         switch (lhs, rhs) {
         case (.idle, .idle):
@@ -46,7 +46,7 @@ enum ViewState {
             return true
         case (.success(let leftData), .success(let rightData)):
             return true
-        case (.failure(let leftError), .failure(let rightError)):
+        case (.failure, .failure):
             return true
             //                  return leftError.localizedDescription == rightError.localizedDescription
         default:

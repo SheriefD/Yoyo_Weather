@@ -12,8 +12,6 @@ struct HomeView:View {
     @StateObject private var locationManager = LocationManager.shared
     @State private var showPermissionAlert = false
     @State var currentLocation:CLLocationCoordinate2D? = nil
-//    @State var weatherData:CurrentWeatherResponse? = nil
-//    @State var forecastData:ForecastResponse? = nil
     @State private var isSearchPresented = false
     @State private var searchResult: String = ""
     @StateObject private var viewModel = HomeViewModel()
@@ -68,8 +66,8 @@ struct HomeView:View {
                     ActivityIndicator(isAnimating: .constant(true), style: .large)
                 }
             }
-            
-            
+        }.alert(isPresented:$locationManager.showPermissionDeniedAlert){
+            createLocationAlert()
         }.onAppear(){
             viewModel.refreshData()
         }.sheet(isPresented: $isSearchPresented) {
