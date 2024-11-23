@@ -26,15 +26,17 @@ struct ErrorView: View {
             Group {
                 switch error {
                 case .decoding:
-                    Text("Please contact developer")
+                    Text("Error handling network response , check support")
                 case .noInternet:
-                    Text("Please check your internet connection")
+                    Text("Please check your internet connection and try again")
                 case .backend(let code):
                     switch code {
-                    case 403:
-                        Text("Github API limit reached, wait a second")
+                    case 401:
+                        Text("Unauthorized access , check API key")
                     case 503:
                         Text("Service unavailable")
+                    case 500 :
+                        Text("Internal server error")
                     default:
                         Text("Server error code: \(code)")
                     }

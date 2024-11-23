@@ -33,4 +33,34 @@ enum WeatherConditions {
     case rainy
 }
 
+enum ViewState {
+    case idle
+    case loading
+    case success(Any?) // Result for success with generic Success and Failure types
+    case failure(Error)
+    static func == (lhs: ViewState, rhs: ViewState) -> Bool {
+        switch (lhs, rhs) {
+        case (.idle, .idle):
+            return true
+        case (.loading, .loading):
+            return true
+        case (.success(let leftData), .success(let rightData)):
+            return true
+        case (.failure(let leftError), .failure(let rightError)):
+            return true
+            //                  return leftError.localizedDescription == rightError.localizedDescription
+        default:
+            return false
+        }
+    }
+}
+//enum ViewState<T>: Equatable where T: Equatable {
+//    case idle
+//    case loading
+//    case result(T)
+//
+
+////    }
+//}
+
 

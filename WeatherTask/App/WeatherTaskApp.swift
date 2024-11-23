@@ -10,12 +10,12 @@ import SwiftUI
 @available(iOS 14.0, *)
 @main
 struct WeatherTaskApp: App {
-
+    
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appdelegate
-
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            GlobalAlertView(content:HomeView())
         }
     }
 }

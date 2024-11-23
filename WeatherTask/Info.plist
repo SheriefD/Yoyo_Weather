@@ -19,8 +19,6 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>The app needs access to your location to provide location-based services</string>
 	<key>WeatherApiKey</key>
 	<string>$(WEATHER_APP_KEY)</string>
 </dict>

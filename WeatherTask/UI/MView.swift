@@ -9,9 +9,9 @@
 //import SwiftUI
 //
 //struct SearchRepoView: View {
-//    
+//
 //    @ObservedObject var viewModel: SearchRepoViewModel
-//    
+//
 //    var body: some View {
 //        NavigationView {
 //            VStack {
@@ -52,7 +52,7 @@
 //                                } label: {
 //                                    Text("Load more")
 //                                }
-//                                
+//
 //                            }
 //                        }
 //
