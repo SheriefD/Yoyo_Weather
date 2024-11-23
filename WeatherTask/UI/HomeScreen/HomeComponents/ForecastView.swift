@@ -14,7 +14,6 @@ struct ForecastView: View {
         VStack(spacing: 15) {
             if let forecast = forecastData?.list{
                let data = GetDailyAverages(list: forecast)
-                let _ = print("EAEREFAEFAE ......\(data.count)")
                 ForEach(data,id: \.0){ data in
                     DayForecastView(day: data.1.dt.getDayOFTheWeekFromTimeInterval(), high: "\(data.1.tempMax.toInt())°", low: "\(data.1.tempMin.toInt())°", icon: "\(data.1.icon)", chanceOfRain: data.1.pop?.toInt())
                 }
@@ -74,7 +73,6 @@ struct ForecastView: View {
             )
         }
         
-        print("vvvvavav :  \(dailyAverages)" , "\n count : \(dailyAverages.count)")
         // Sort dictionary data by date
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
